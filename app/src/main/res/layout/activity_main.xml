@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androiddesdecero.paint.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <ImageButton
+            android:id="@+id/ibtTamanoPincel"
+            android:src="@drawable/ic_dibujar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:id="@+id/ibtSave"
+            android:src="@drawable/ic_save"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:id="@+id/ibtGoma"
+            android:src="@drawable/ic_delete"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:id="@+id/ibtBorrarTodo"
+            android:src="@drawable/ic_add"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="0dp">
+
+        <com.androiddesdecero.paint.Cuadro
+            android:id="@+id/cuadro"
+            android:background="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/ibtColorGreen"
+                android:background="@color/colorGreen"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+            <ImageButton
+                android:id="@+id/ibtColorBlue"
+                android:background="@color/colorBlue"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+            <ImageButton
+                android:id="@+id/ibtColorYellow"
+                android:background="@color/colorYellow"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+            <ImageButton
+                android:id="@+id/ibtColorRed"
+                android:background="@color/colorRed"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+            <ImageButton
+                android:id="@+id/ibtColorBlack"
+                android:background="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
